@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+body {
+  /* background: linear-gradient(to right, orange, blueviolet); */
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+.navbar {
+  background: transparent;
+  backdrop-filter: blur(20px);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  height: 100%;
+}
+.navbar ul li {
+  height: 100%;
+  padding: 1rem;
+}
+.navbar ul .logo:hover {
+}
+.bold {
+  font-weight: 700;
+}
+.navbar .logo {
+  margin-right: auto;
+  color: white;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffff80;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: linear-gradient(45deg, blue, orange);
+}
+.seeMore {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.logo .logo-sp {
+  height: auto;
+  color: #ffff80;
+  text-shadow: 10px 0 20px;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  text-shadow: 0 0 25px white;
+}
+.navbar ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background: url("heroBG.jpg");
+  background-size: 100% 99vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.hero .title1 {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  border: 2px solid aqua;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px gray;
+  gap: 16px;
+  align-item: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.coupon {
+  transform: scale(0);
+  font-weight: 800;
+  transition: 0.5s;
+}
+.hero .title1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px aqua;
+}
+.hero .title1:hover .coupon {
+  transform: scale(1);
+  display: block;
+}
+.hero .title1 button {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  background: aqua;
+  border: none;
+  border-radius: 10px;
+  font-weght: 700;
+  width: 9rem;
+  padding: 10px;
+}
+.title1 button:hover {
+  box-shadow: 0 0 10px blueviolet;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.hero .img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px aqua;
+}
+.hero .img img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  box-shadow: 0 0 20px aqua;
+}
+.title {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 5px solid black;
+  width: 8rem;
+}
+.card h3,
+.card p,
+.card i,
+.card button {
+  color: black;
+}
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.card img {
+  width: 150px;
+  height: 200px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 10px;
+}
+.card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid gray;
+  padding: 1rem;
+  gap: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.card button {
+  color: white;
+  background: aqua;
+  border: none;
+  border-radius: 10px;
+  font-weght: 700;
+  width: 9rem;
+  padding: 10px;
+}
+.card button:hover {
+  box-shadow: 0 0 10px aqua;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer {
+  color: white;
+  background: blueviolet;
+  border-radius: 10px 10px 0 0;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px gray;
+}
+.number {
+  align-self: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.social img:hover {
+  transform: translateY(-10px) scale(1.1);
+  transition: 0.3s;
+}
+.social {
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+.social p {
+  color: white;
+}
+.number h3 {
+  color: white;
+}
